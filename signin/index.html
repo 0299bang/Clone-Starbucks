@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <!-- 코드를 엄격하게 관리 하기 위해서 '>'슬래쉬 없는 빈 태그에 '/'넣어주기> -->
-  <!-- 문자 인코딩 방식 -->
+<head>      
   <meta charset="UTF-8" />
-
-  <!-- 뷰포트의 가로사이즈를 디바이스 가로사이즈로 맞추고,
-    기본적인 확대 정도를 1.0 확대축소 아닌 상태로 출발한다 선언 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 탭에 보여지는 이름 -->
   <title>Starbucks Coffee Korea</title>
 
   <!-- 오픈 그래프 -->
@@ -27,14 +21,10 @@
   <meta property="twitter:image" content="../images/starbucks_seo.jpg" />
   <meta property="twitter:url" content="https://starbucks.co.kr" />
 
-  <!-- 기본적으로 favicon.ico 라는 이름으로 명시 해 두면 알아서 찾아서 보여준다,
-    그렇기 때문에 아이콘의 이름은 favicon.ico로 해놓아야 한다 
-    다른 이미지를 설정하고 싶으면 아래와 같이 사용한다. -->
+  <!-- 파비콘 -->
   <link rel="icon" href="../favicon.png" />
-
   <!-- 브라우저에서 제공하는 기본적인 스타일 초기화(리셋) 시키기 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +34,7 @@
   
   <!-- main.css를 연결해주기 -->
   <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/signin.css" />
   <!-- js 연결 -->
   <script defer src="../js/common.js"></script>
 </head>
@@ -381,12 +372,34 @@
     </div>
 
     
-    <section class="signin"></section>
+    <section class="signin">
+      <h1>로그인</h1>
+      <div class="signin__card">
+        <h2>
+          <strong>Welcome!</strong> 스타벅스에 오신 것을 환영합니다.
+        </h2>
+        <form>
+          <input type="text" placeholder="아이디를 입력하세요." />
+          <input type="password" placeholder="비밀번호를 입력하세요." />
+          <!-- 제출, 서브밋 -->
+          <input type="submit" value="로그인" />
+          <p>
+            * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br>
+            정기적으로 비밀번호를 변경하세요!
+          </p>
+        </form>
+        <div class="actions">
+          <a href="javascript:void(0)">회원가입</a>
+          <a href="javascript:void(0)">아이디 찾기</a>
+          <a href="javascript:void(0)">비밀번호 찾기</a>
+        </div>
+      </div>
+    </section>
 
 
   </header>
 
-  <!-- FOOTER -->
+  <!--FOOTER-->
   <footer>
     <div class="inner">
 
@@ -408,14 +421,14 @@
       <div class="info">
         <span>사업자등록번호 201-81-21515</span>
         <span>(주)스타벅스 코리아 대표이사 이석구</span>
-        <span>TEL : 02) 3015-110 / FAX : 02) 3015-1106</span>
+        <span>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</span>
         <span>개인정보 책임자 : 강기원</span>
       </div>
 
       <p class="copyright">
-        &copy; <span class="this-year"></span>Starbucks Coffee Company. All Rights Reserved.
+        &copy; <span class="this-year"></span> Starbucks Coffee Company. All Rights Reserved.
       </p>
-      <img src="../images/starbucks_logo_only_text.png" alt="" class="logo" />
+      <img src="../images/starbucks_logo_only_text.png" alt="STAR BUCKS" class="logo" />
 
     </div>
   </footer>
